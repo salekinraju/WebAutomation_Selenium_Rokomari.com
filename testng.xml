@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rokomari">
+    <!-- -->
+    <test name="HomeTest">
+        <classes>
+            <class name="tests.HomePageTest" />
+        </classes>
+    </test>
+    <test name="LoginTest">
+        <classes>
+            <class name="tests.LoginPageTest" />
+        </classes>
+    </test>
+    <test name="AuthorTest">
+        <classes>
+            <class name="tests.AuthorPageTest" />
+        </classes>
+    </test>
+    <test name="SelectedAuthorTest">
+        <classes>
+            <class name="tests.SelectedAuthorTest"/>
+        </classes>
+    </test>
+    <test name="SelectBookTest">
+        <classes>
+            <class name="tests.SelectBookTest"/>
+        </classes>
+    </test>
+    <test name="BookTest">
+        <classes>
+            <class name="tests.BookTest"/>
+        </classes>
+    </test>
+    <test name="CartTest">
+        <classes>
+            <class name="tests.CartTest"/>
+        </classes>
+    </test>
+        <test name="PlaceOrderTest">
+        <classes>
+            <class name="tests.PlaceOrderTest"/>
+        </classes>
+    </test>
+
+</suite>
