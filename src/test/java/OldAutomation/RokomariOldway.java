@@ -58,21 +58,21 @@ public class RokomariOldway extends browserSetup{
         WebElement category2 = driver.findElement(By.xpath("//label[contains(text(),'শিশু-কিশোর উপন্যাস')]"));
         category2.click();
         Thread.sleep(3000);
-        WebElement scrollLocation = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[57]/div[1]/a[1]/div[1]/img[1]"));
+        WebElement scrollLocation = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[54]/div[1]/a[1]"));
         js.executeScript("arguments[0].scrollIntoView(true);", scrollLocation);
         Thread.sleep(5000);
         WebElement nextPage = driver.findElement(By.xpath("//a[contains(text(),'Next')]"));
         nextPage.click();
         Thread.sleep(3000);
 
-        WebElement selectBook = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[4]/div[1]"));
+        WebElement selectBook = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/a[1]"));
         action.moveToElement(selectBook).perform();
         Thread.sleep(3000);
-        WebElement gotoBook = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[4]/div[1]/div[1]/a[1]"));
+        WebElement gotoBook = driver.findElement(By.xpath("//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[1]/a[1]"));
         gotoBook.click();
         Thread.sleep(3000);
 
-        WebElement addToCart = driver.findElement(By.xpath("//body/div[7]/section[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/a[2]"));
+        WebElement addToCart = driver.findElement(By.xpath("//body/div[7]/section[1]/section[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/a[2]/span[1]"));
         addToCart.click();
         Thread.sleep(2000);
         WebElement cart = driver.findElement(By.xpath("//*[@id='cart-icon']"));

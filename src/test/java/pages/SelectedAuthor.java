@@ -6,7 +6,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GetScreenshot;
@@ -28,7 +27,7 @@ public class SelectedAuthor extends BaseDriver {
     WebElement scrollToFilter2;
     @FindBy(xpath = "//label[contains(text(),'শিশু-কিশোর উপন্যাস')]")
     WebElement category2;
-    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[57]/div[1]/a[1]/div[1]/img[1]")
+    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[54]/div[1]/a[1]")
     WebElement scrollLocation;
     @FindBy(xpath = "//a[contains(text(),'Next')]")
     WebElement nextPage;
@@ -55,7 +54,6 @@ public class SelectedAuthor extends BaseDriver {
 
     public void authorSelected() throws IOException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        Actions action = new Actions(driver);
         try {
             test.info("Select category and go to next page.");
             if (scrollToFilter.isDisplayed()){
@@ -72,7 +70,6 @@ public class SelectedAuthor extends BaseDriver {
                 nextPage.click();
                 Thread.sleep(3000);
                 passCaseWithSC("Next page clicked", "nextPage");
-
             }
 
         }

@@ -16,7 +16,7 @@ public class SelectedAuthorTest extends BaseDriver {
     ExtentTest parentTest;
     ExtentTest childTest;
     @BeforeClass
-    public void start() throws InterruptedException {
+    public void start() {
         report = ExtentFactory.getInstance();
         parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>Rokomari Selected Author</b></p>").assignAuthor("Salekin").assignDevice("Chrome");
     }

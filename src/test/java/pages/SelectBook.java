@@ -19,9 +19,9 @@ public class SelectBook extends BaseDriver {
         this.test = test;
     }
 
-    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[4]/div[1]")
+    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/a[1]")
     WebElement selectBook;
-    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[4]/div[1]/div[1]/a[1]")
+    @FindBy(xpath = "//body/div[6]/div[1]/div[1]/div[1]/section[1]/div[2]/div[1]/div[3]/div[1]/div[1]/a[1]")
     WebElement gotoBook;
 
 
